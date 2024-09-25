@@ -7,14 +7,14 @@ const getTotalIsles = function (grid) {
   let islandCount = 0;
 
   function dfs(r, c) {
-      // If out of bounds or at water or already visited, return
+      
       if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W' || visited[r][c]) {
           return;
       }
-      // Mark this cell as visited
+      
       visited[r][c] = true;
 
-      // Explore all 4 directions (up, down, left, right)
+      
       dfs(r - 1, c); // up
       dfs(r + 1, c); // down
       dfs(r, c - 1); // left
