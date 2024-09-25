@@ -1,8 +1,8 @@
 const decodeTheRing = function (s, p) {
   const m = s.length; 
-  const n = p.length; // Length of the pattern
+  const n = p.length; 
 
-  // Create a 2D array for dynamic programming
+  
   const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(false));
 
   // Base case: empty message and empty pattern match
