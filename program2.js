@@ -28,7 +28,7 @@ const decodeTheRing = function (s, p) {
       }
   }
 
-  return dp[m][n]; // The result is whether the whole message matches the whole pattern
+  return dp[m][n]; 
 };
 
 module.exports = decodeTheRing;
