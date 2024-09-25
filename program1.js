@@ -26,7 +26,7 @@ const getTotalIsles = function (grid) {
           if (grid[r][c] === 'L' && !visited[r][c]) {
               
               islandCount++;
-              dfs(r, c); // Perform DFS to mark all connected land
+              dfs(r, c); 
           }
       }
   }
