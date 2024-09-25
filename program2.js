@@ -1,5 +1,5 @@
 const decodeTheRing = function (s, p) {
-  const m = s.length; /
+  const m = s.length; 
   const n = p.length; // Length of the pattern
 
   // Create a 2D array for dynamic programming
