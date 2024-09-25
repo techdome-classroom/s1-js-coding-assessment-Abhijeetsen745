@@ -5,10 +5,10 @@ const decodeTheRing = function (s, p) {
   
   const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(false));
 
-  // Base case: empty message and empty pattern match
+  
   dp[0][0] = true;
 
-  // Handle patterns that start with '*'
+  
   for (let j = 1; j <= n; j++) {
       if (p[j - 1] === '*') {
           dp[0][j] = dp[0][j - 1]; // '*' can match an empty message
